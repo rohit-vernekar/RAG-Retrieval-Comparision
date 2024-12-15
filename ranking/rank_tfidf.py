@@ -1,7 +1,7 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from typing import List
-
+import numpy as np
 
 def rank_passages_tfidf(query: str, passages: List[str]) -> List[int]:
     """Rank passages by cosine similarity with the query using TF-IDF vectors."""
